@@ -1,26 +1,63 @@
-.no-click{
-    cursor:default !important;
+/* Quapton-Inspired Frappe Base Theme + Custom Classes */
+
+/* Root Variables for Easy Theming */
+:root {
+  --primary-bg: #0A0A0A; /* Deep Black */
+  --secondary-bg: #1A1A1A; /* Dark Gray */
+  --primary-text: #FFFFFF; /* White */
+  --secondary-text: #CCCCCC; /* Light Gray */
+  --accent-color: #00FFFF; /* Electric Blue */
+  --accent-hover: #00CED1; /* Dark Turquoise */
+  --gray-100: #f5f5f5;
+  --margin-sm: 8px;
+  --font-family: 'Inter', sans-serif;
 }
 
-.hide-side-section{
-    display: none !important;
+/* Global Styles */
+body {
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
-.widget.menu-widget{
-    background-color: #d4daf9;
-    margin: 20px;
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-text);
+  font-weight: 600;
+  margin-top: 1.5em;
 }
 
-.widget-title .widget-title-text{
-    text-decoration: underline;
-    font-weight: 800;
+/* Custom Classes */
+.no-click {
+  cursor: default !important;
+}
+
+.hide-side-section {
+  display: none !important;
+}
+
+.widget.menu-widget {
+  background-color: var(--secondary-bg);
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 255, 255, 0.1);
+  padding: 12px;
+}
+
+.widget-title .widget-title-text {
+  text-decoration: underline;
+  font-weight: 800;
+  color: var(--accent-color);
 }
 
 .menu-widget:hover .widget-title .widget-title-text {
-    color: var(--gray-100);
-    text-decoration: none;
+  color: var(--accent-hover);
+  text-decoration: none;
 }
 
-.menu-open-btn{
-    margin-right: var(--margin-sm);
+.menu-open-btn {
+  margin-right: var(--margin-sm);
 }
