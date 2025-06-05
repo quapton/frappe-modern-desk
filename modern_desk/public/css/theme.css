@@ -32,11 +32,11 @@
   font-size: 14px;
   background-color: #000000;
   font-family: 'Poppins', sans-serif;
-  color: #ffffff;
+  color: #720E9E;
 }
 
 [data-theme=modern_ui_theme] a {
-  color: #cccccc;
+  color:  #720E9E;
   font-weight: 500;
 }
 
