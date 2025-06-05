@@ -14,7 +14,40 @@
   --blue-avatar-color: var(--main-color);
   --blue: var(--main-color);
 }
+/* 🛑 Force override residual neon cyan colors from core or inline styles */
+[data-theme=modern_ui_theme] * {
+  color: inherit !important;
+  border-color: inherit !important;
+}
 
+[data-theme=modern_ui_theme] * {
+  --accent-color: var(--main-color) !important;
+}
+
+[data-theme=modern_ui_theme] {
+  --primary: #720E9E !important;
+  --dt-primary-color: #720E9E !important;
+  --blue-avatar-bg: #720E9E !important;
+  --blue-avatar-color: #720E9E !important;
+  --blue: #720E9E !important;
+  --cyan: #720E9E !important;
+  --cyan-100: #720E9E !important;
+  --cyan-200: #720E9E !important;
+  --cyan-300: #720E9E !important;
+  --cyan-400: #720E9E !important;
+  --cyan-500: #720E9E !important;
+  --cyan-600: #720E9E !important;
+  --cyan-700: #720E9E !important;
+  --cyan-800: #720E9E !important;
+  --cyan-900: #720E9E !important;
+}
+
+/* Forcefully override any inline styles (if still needed) */
+[data-theme=modern_ui_theme] [style*="#00ffff"],
+[data-theme=modern_ui_theme] [style*="rgb(0, 255, 255)"] {
+  background-color: #720E9E !important;
+  color: #fff !important;
+}
 /* Layout */
 [data-theme=modern_ui_theme] body {
   font-size: 14px;
