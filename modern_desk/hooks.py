@@ -12,14 +12,9 @@ app_license = "mit"
 # include js, css files in header of desk.html
 
 app_include_css =  [
-    "/assets/modern_desk/css/theme.css",
-    "/assets/modern_desk/css/menu.css",]
+    "/assets/modern_desk/css/theme.css"]
 app_include_js = [
     "/assets/modern_desk/js/theme.js",
-    "/assets/modern_desk/js/menu/router.js",
-    "/assets/modern_desk/js/menu/page.js",
-    "/assets/modern_desk/js/menu/workspace.js",
-    "/assets/modern_desk/js/custom_form_class.js",
     "/assets/modern_desk/js/lucide_icons.js"]
 
 
