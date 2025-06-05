@@ -1,9 +1,9 @@
 [project]
-name = "modern_desk"
+name = "quapton_desk"
 authors = [
-    { name = "Pratheesh Russell", email = "pratheeshrussell@gmail.com"}
+    { name = "Quapton AI ", email = "partners@quapton.com"}
 ]
-description = "A modern UI for frappe desk"
+description = "A modern UI for quapton desk"
 requires-python = ">=3.10"
 readme = "README.md"
 dynamic = ["version"]
