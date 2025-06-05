@@ -1,94 +1,41 @@
-/* Quapton Black-Violet Theme for Frappe (modern_ui_theme) */
+/* Clean Light Theme with Violet Navbar – modern_ui_theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
 :root {
-  --main-color: #720E9E;        /* Widget & button background */
-  --second-color: #720E9E;      /* Accent if needed */
-  --third-color: #720E9E;       /* Tertiary for hover/focus */
-  --widget-bg: #720E9E;
+  --main-color: #720E9E;         /* For navbar */
+  --text-color: #000000;
+  --bg-color: #ffffff;
 }
 
 [data-theme=modern_ui_theme] {
+  font-family: 'Poppins', sans-serif;
   --primary: var(--main-color);
   --dt-primary-color: var(--main-color);
   --blue-avatar-bg: var(--main-color);
   --blue-avatar-color: var(--main-color);
   --blue: var(--main-color);
 }
-/* 🛑 Force override residual neon cyan colors from core or inline styles */
-[data-theme=modern_ui_theme] * {
-  color: inherit !important;
-  border-color: inherit !important;
-}
 
-[data-theme=modern_ui_theme] * {
-  --accent-color: var(--main-color) !important;
-}
-
-[data-theme=modern_ui_theme] {
-  --primary: #720E9E !important;
-  --dt-primary-color: #720E9E !important;
-  --blue-avatar-bg: #720E9E !important;
-  --blue-avatar-color: #720E9E !important;
-  --blue: #720E9E !important;
-  --cyan: #720E9E !important;
-  --cyan-100: #720E9E !important;
-  --cyan-200: #720E9E !important;
-  --cyan-300: #720E9E !important;
-  --cyan-400: #720E9E !important;
-  --cyan-500: #720E9E !important;
-  --cyan-600: #720E9E !important;
-  --cyan-700: #720E9E !important;
-  --cyan-800: #720E9E !important;
-  --cyan-900: #720E9E !important;
-}
-
-/* Forcefully override any inline styles (if still needed) */
-[data-theme=modern_ui_theme] [style*="#00ffff"],
-[data-theme=modern_ui_theme] [style*="rgb(0, 255, 255)"] {
-  background-color: #720E9E !important;
-  color: #fff !important;
-}
 /* Layout */
-[data-theme=modern_ui_theme] body {
-  font-size: 14px;
-  background-color: #000;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
-}
-
+[data-theme=modern_ui_theme] body,
 [data-theme=modern_ui_theme] .page-container,
-[data-theme=modern_ui_theme] .layout-main-section {
-  background-color: #000;
+[data-theme=modern_ui_theme] .layout-main-section,
+[data-theme=modern_ui_theme] .layout-side-section {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Typography */
-[data-theme=modern_ui_theme] a,
-[data-theme=modern_ui_theme] ul li a {
-  color: #fff;
-  font-weight: 500;
-}
-
-[data-theme=modern_ui_theme] ul li a:hover {
-  background-color: var(--main-color);
-  color: #fff;
-}
-
-/* Headings & text helpers */
-[data-theme=modern_ui_theme] .small, small {
-  font-size: 95%;
-  color: #fff;
-}
-
-[data-theme=modern_ui_theme] .h6.uppercase, h6.uppercase {
-  font-weight: 600;
-  font-size: 11.5px;
-  color: #fff;
+[data-theme=modern_ui_theme] * {
+  color: var(--text-color) !important;
 }
 
 /* Navbar */
 [data-theme=modern_ui_theme] .navbar {
   background-color: var(--main-color) !important;
-  border: none !important;
+  color: #fff;
+  border: none;
 }
 
 [data-theme=modern_ui_theme] .navbar-nav > li > a,
@@ -101,88 +48,62 @@
   color: #ddd !important;
 }
 
-/* Sidebar */
-[data-theme=modern_ui_theme] .standard-sidebar-item.selected,
-[data-theme=modern_ui_theme] .standard-sidebar-item:hover {
-  background-color: var(--main-color);
-}
-
-[data-theme=modern_ui_theme] .standard-sidebar-item.selected a,
-[data-theme=modern_ui_theme] .standard-sidebar-item.selected a svg,
-[data-theme=modern_ui_theme] .standard-sidebar-item:hover a,
-[data-theme=modern_ui_theme] .standard-sidebar-item:hover svg {
-  color: #fff;
-  fill: #fff;
-}
-
-/* Widgets */
+/* Sidebar & Widgets */
+[data-theme=modern_ui_theme] .standard-sidebar-item,
 [data-theme=modern_ui_theme] .widget {
-  background-color: var(--main-color);
-  border: none;
-  color: #fff;
-  box-shadow: none;
+  background-color: var(--bg-color);
+  border: 1px solid #e0e0e0;
 }
 
 [data-theme=modern_ui_theme] .widget .widget-title,
 [data-theme=modern_ui_theme] .widget .widget-head,
 [data-theme=modern_ui_theme] .widget .widget-body {
-  color: #fff;
+  color: var(--text-color);
 }
 
 /* Buttons */
+[data-theme=modern_ui_theme] .btn,
 [data-theme=modern_ui_theme] .btn-primary,
-[data-theme=modern_ui_theme] .btn-secondary,
-[data-theme=modern_ui_theme] .btn-default {
+[data-theme=modern_ui_theme] .btn-default,
+[data-theme=modern_ui_theme] .btn-secondary {
   background-color: var(--main-color);
   border-color: var(--main-color);
   color: #fff;
 }
 
-[data-theme=modern_ui_theme] .btn-primary:hover,
-[data-theme=modern_ui_theme] .btn-secondary:hover,
-[data-theme=modern_ui_theme] .btn-default:hover {
-  background-color: var(--main-color);
-  color: #fff;
+[data-theme=modern_ui_theme] .btn:hover {
+  background-color: #5a0b85;
 }
 
-[data-theme=modern_ui_theme] .btn-default:hover svg {
-  stroke: #fff;
-  fill: #fff;
-}
-
-/* Page Header */
-[data-theme=modern_ui_theme] .page-head,
-[data-theme=modern_ui_theme] #page-Workspaces .page-head {
-  background-color: #000;
-  color: #fff;
-  box-shadow: none;
-}
-
-[data-theme=modern_ui_theme] .page-title .title-text {
-  color: #fff;
-  font-size: 22px;
-}
-
-/* Table Head */
-[data-theme=modern_ui_theme] .list-row-head {
-  background-color: #000;
-  color: #fff;
-  border-bottom: 1px solid var(--main-color);
-}
-
-/* Inputs & Editor */
+/* Inputs */
 [data-theme=modern_ui_theme] input,
-[data-theme=modern_ui_theme] .frappe-control .ql-editor:not(.read-mode),
-[data-theme=modern_ui_theme] .input-with-feedback,
-[data-theme=modern_ui_theme] .like-disabled-input {
-  background-color: #000;
-  color: #fff;
-  border-color: var(--main-color);
+[data-theme=modern_ui_theme] textarea,
+[data-theme=modern_ui_theme] select,
+[data-theme=modern_ui_theme] .ql-editor {
+  background-color: #fff;
+  color: #000;
+  border-color: #ccc;
 }
 
-/* Document Link Buttons */
+/* Page Titles & Headings */
+[data-theme=modern_ui_theme] .page-title .title-text {
+  font-size: 22px;
+  color: var(--text-color);
+}
+
+[data-theme=modern_ui_theme] .page-head {
+  background-color: #fff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* List Head */
+[data-theme=modern_ui_theme] .list-row-head {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Document Links */
 [data-theme=modern_ui_theme] .document-link-badge,
-[data-theme=modern_ui_theme] .document-link-badge span,
 [data-theme=modern_ui_theme] .document-link button {
   background-color: var(--main-color) !important;
   color: #fff !important;
@@ -191,13 +112,4 @@
 [data-theme=modern_ui_theme] .document-link button svg {
   fill: white;
   stroke: white;
-}
-
-/* Misc */
-[data-theme=modern_ui_theme] .indicator-pill,
-[data-theme=modern_ui_theme] .notifications-icon svg {
-  background: var(--main-color);
-  color: #fff;
-  stroke: #fff;
-  fill: #fff;
 }
