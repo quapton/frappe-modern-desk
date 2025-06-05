@@ -3,7 +3,7 @@
 
 :root {
   --main-color: #720E9E;         /* Primary - Dark Violet */
-  --second-color: #40E0D0;       /* Secondary - Turquoise */
+  --second-color: #720E9E;       /* Secondary - Turquoise */
   --third-color: #362B41;        /* Tertiary - Dark Violet Shade */
   --widget-bg: #1A1A1A;          /* Widget Background - Dark Gray */
 }
