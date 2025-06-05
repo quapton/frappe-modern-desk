@@ -1,7 +1,7 @@
-app_name = "modern_desk"
-app_title = "Modern Desk"
-app_publisher = "Pratheesh Russell"
-app_description = "A modern UI for frappe desk"
+app_name = "quapton_desk"
+app_title = "Quapton Desk"
+app_publisher = "Quapton AI Solutions"
+app_description = "A modern UI for Quapton desk"
 app_email = "pratheeshrussell@gmail.com"
 app_license = "mit"
 # required_apps = []
@@ -33,9 +33,9 @@ app_include_js = [
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-doctype_js = {
-    "Team Lunch":"public/js/team_lunch/workflow_confirmation.js"
-    }
+# doctype_js = {
+#     "Team Lunch":"public/js/team_lunch/workflow_confirmation.js"
+#     }
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
