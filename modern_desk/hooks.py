@@ -19,7 +19,8 @@ app_include_js = [
     "/assets/modern_desk/js/menu/router.js",
     "/assets/modern_desk/js/menu/page.js",
     "/assets/modern_desk/js/menu/workspace.js",
-    "/assets/modern_desk/js/custom_form_class.js"]
+    "/assets/modern_desk/js/custom_form_class.js",
+    "/assets/quapton_theme/js/lucide_icons.js"]
 
 
 # include js, css files in header of web template
