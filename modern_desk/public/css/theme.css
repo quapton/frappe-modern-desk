@@ -113,3 +113,32 @@
   fill: white;
   stroke: white;
 }
+/* Clean Light Buttons: White BG, Violet Text & Border */
+
+[data-theme=modern_ui_theme] .btn,
+[data-theme=modern_ui_theme] .btn-primary,
+[data-theme=modern_ui_theme] .btn-default,
+[data-theme=modern_ui_theme] .btn-secondary {
+  background-color: #fff !important;
+  color: #720E9E !important;
+  border: 1px solid #720E9E !important;
+  font-weight: 600;
+}
+
+[data-theme=modern_ui_theme] .btn:hover,
+[data-theme=modern_ui_theme] .btn-primary:hover,
+[data-theme=modern_ui_theme] .btn-default:hover,
+[data-theme=modern_ui_theme] .btn-secondary:hover {
+  background-color: #720E9E !important;
+  color: #fff !important;
+  border-color: #720E9E !important;
+}
+
+[data-theme=modern_ui_theme] .btn svg {
+  stroke: #720E9E !important;
+  fill: none;
+}
+
+[data-theme=modern_ui_theme] .btn:hover svg {
+  stroke: #fff !important;
+}
